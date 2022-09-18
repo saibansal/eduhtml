@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/aos-animation.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
   <link rel="stylesheet" href="css/style.css">
   <title>Edu Bary</title>
@@ -20,13 +21,13 @@
     <div class="topbar">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-down" data-aos-duration="700">
             <ul>
               <li><a href="#"><i class="fas fa-headphones"></i> +353 89 986 5324</a></li>
               <li><a href="#"><i class="fas fa-envelope"></i> support@gmail.com </a></li>
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-down" data-aos-duration="700">
             <ul class="social-media">
               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -41,13 +42,17 @@
     <!-- top bar section finish -->
     <!-- header section starts -->
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" data-aos="zoom-in-fade" data-aos-duration="1500">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="images/edubary.png" alt="" srcset=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <span style="float-right"> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler topSearchButton" type="button">
+              <i class="fas fa-search"></i>
+            </button></span>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
               <li class="active">
@@ -85,11 +90,14 @@
           <div class="carousel-item active">
             <img src="images/banner-image.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption">
-              <h6>Learn & Achieve</h6>
-              <h5>Now learning <span class="yellow-bg">Online <img src="images/yellow-bg-2.png" alt=""> </span><br>
+              <h6 data-aos="fade-left" data-aos-duration="1200">Learn & Achieve</h6>
+              <h5 data-aos="fade-left" data-aos-duration="1800">Now learning <span class="yellow-bg">Online <img
+                    src="images/yellow-bg-2.png" alt=""> </span><br>
                 course.</h5>
-              <p>Meet university, and cultural institutions, who'll share their experience.</p>
-              <p><a href="#" class="ebary-button">Ready to get Started?</a></p>
+              <p data-aos="fade-left" data-aos-duration="2400">Meet university, and cultural institutions, who'll share
+                their experience.</p>
+              <p data-aos="fade-left" data-aos-duration="3000"><a href="#" class="ebary-button">Ready to get
+                  Started?</a></p>
             </div>
           </div>
 
@@ -118,12 +126,12 @@
     <!-- main slider section finish -->
 
     <!-- search bar section starts -->
-    <section class="searchSection">
+    <section class="searchSection" id="navbarNavDropdownSearch">
       <div class="container">
         <form>
           <div class="inner-form">
             <div class="box-wrapper">
-              <div class="input-field first-wrap">
+              <div class="input-field first-wrap" data-aos="fade-right" data-aos-offset="300">
                 <div class="form-floating">
                   <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                     <option selected>Select Category</option>
@@ -134,7 +142,7 @@
                   <label for="floatingSelect">Select Category</label>
                 </div>
               </div>
-              <div class="input-field first-wrap">
+              <div class="input-field first-wrap" data-aos="fade-right" data-aos-offset="300">
                 <div class="form-floating">
                   <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                     <option selected>Select Sub Category</option>
@@ -146,7 +154,7 @@
                 </div>
               </div>
 
-              <div class="input-field first-wrap second-wrap">
+              <div class="input-field first-wrap second-wrap" data-aos="fade-right" data-aos-offset="300">
                 <div class="form-floating">
                   <input type="text" class="form-control" id="floatingInputGrid" placeholder="Enter keywords to Search">
                   <label for="floatingInputGrid">Enter keywords to Search </label>
@@ -154,7 +162,7 @@
 
               </div>
             </div>
-            <div class="input-field third-wrap">
+            <div class="input-field third-wrap" data-aos="fade-left" data-aos-offset="300">
               <button class="btn-search" type="button">
                 <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search"
                   role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -173,1040 +181,130 @@
     <!-- categories section starts -->
     <div class="section categories">
       <div class="container">
-        <div class="slider slider-nav mb-4">
-          <div>
-            <div class="card">
+        <div class="row text-center slider">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Science And Technology</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Humanities</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Kids Learning</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Social Science</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Management</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Computer Science</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="card">
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
               <img src="images/download.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <span>
-                  <h5 class="card-title">IT Software</h5>
+                  <h5 class="card-title">Medicine And Health</h5>
                   <p class="card-text"><small>over 750 courses</small></p>
                 </span>
               </div>
             </div>
           </div>
+
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
+              <img src="images/download.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <span>
+                  <h5 class="card-title">Exam Preparation</h5>
+                  <p class="card-text"><small>over 750 courses</small></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
+              <img src="images/download.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <span>
+                  <h5 class="card-title">Lifestyle</h5>
+                  <p class="card-text"><small>over 750 courses</small></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 ps-0 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card" data-aos="fade-down" data-aos-duration="1500">
+              <img src="images/download.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <span>
+                  <h5 class="card-title">Computer Science Applications</h5>
+                  <p class="card-text"><small>over 750 courses</small></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="slider slider-for">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="row">
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="row">
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="row">
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="row">
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="row">
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>MATHEMATICS</h2>
-                      <p>3007 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>BIOLOGY</h2>
-                      <p>2913 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Physics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>PHYSICS</h2>
-                      <p>2134 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Engineering-&-Technology-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>ENVIRONMENTAL SCIENCE</h2>
-                      <p>1375 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                  <li class="col-6 col-md-3 col-lg-2">
-                    <a href="#">
-                      <img
-                        src="https://edubary.com/static/catalog/images/landingpage/Mathematics-Science-And-Technology.webp"
-                        alt="" srcset="">
-                      <h2>EARTH SCIENCE </h2>
-                      <p>1146 UNIQUE SKILLS</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
       </div>
     </div>
     <!-- categories section finish -->
@@ -1215,7 +313,7 @@
     <div class="section aboutus">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md-7">
+          <div class="col-md-7 order-sm-1 order-2" data-aos="fade-right" data-aos-duration="3000">
             <h4>Welcome to<em> EduBary</em></h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -1224,10 +322,11 @@
               of Letraset sheets containings of Lorem Ipsum.</p>
             <p><a href="#" class="ebary-button">Learn More <i class="fas fa-arrow-right ms-3"></i></a></p>
           </div>
-          <div class="col-md-4"><img src="images/aboutus.png" class="img-fluid" alt="" srcset=""></div>
+          <div class="col-md-4 order-sm-2 order-1 mb-3" data-aos="fade-left" data-aos-duration="3000"><img
+              src="images/aboutus.png" class="img-fluid" alt="" srcset=""></div>
         </div>
 
-        <div class="row mt-5 about-section">
+        <div class="row mt-5 about-section" data-aos="fade-up" data-aos-duration="3000">
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
@@ -1258,22 +357,20 @@
     </div>
     <!-- about us section finish -->
 
-   
-
     <!-- latest Course section starts -->
     <section class="section latestCourse">
       <div class="container">
         <div class="section-heading">
-          <h4>
+          <h4 data-aos="fade-right" data-aos-duration="1500">
             Our Latest <em>Course</em>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's.</p>
 
           </h4>
-          <ul class="nav" id="pills-tab" role="tablist">
+          <ul class="nav" id="pills-tab" role="tablist" data-aos="zoom-in-up" data-aos-duration="1500">
             <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
               data-bs-title="This top tooltip is themed via CSS variables.">
-              <a href="#" class="active" data-filter-heading="SeeAll" data-toggle="pill">See All</a>
+              <a href="#" class="" data-filter-heading="SeeAll" data-toggle="pill">See All</a>
             </li>
             <li class="nav-item">
               <a data-toggle="pill" href="#" data-filter-heading="NewTrending">New Trending</a>
@@ -1290,15 +387,15 @@
 
         <div class="tab-content aaa">
           <!-- all events section starts -->
-          <div id="exhibition" class="slider slick-slider">
+          <div id="exhibition" class="slider slick-slider" data-aos="fade-down" data-aos-duration="1000">
 
 
-            <div class="upcomingEvents card">
+            <div class="NewTrending card">
               <img src="images/list-image.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <span class="badge rounded-pill text-bg-primary">Art & Design</span>
+                <span class="badge rounded-pill text-bg-primary">Art & Design </span>
 
-                <h5 class="card-title">Business Studies</h5>
+                <h5 class="card-title">Business Studies Session</h5>
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
                 <div class="card-footer">
@@ -1314,12 +411,12 @@
 
             </div>
 
-            <div class="pastEvents card">
+            <div class="Popularity card">
               <img src="images/list-image.jpg" class="card-img-top" alt="">
               <div class=" card-body">
-                <span class="badge rounded-pill text-bg-secondary">Art & Design</span>
+                <span class="badge rounded-pill text-bg-secondary">Art & Design Popular</span>
 
-                <h5 class="card-title">Business Studies</h5>
+                <h5 class="card-title">Business Studies Course</h5>
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
                 <div class="card-footer">
@@ -1334,13 +431,12 @@
               </div>
             </div>
 
-
-            <div class="card cat-3">
+            <div class="card Popularity cat-3">
               <img src="images/list-image.jpg" class="card-img-top" alt="">
               <div class=" card-body">
-                <span class="badge rounded-pill text-bg-success">Art & Design</span>
+                <span class="badge rounded-pill text-bg-success">Bachelor of Arts</span>
 
-                <h5 class="card-title">Business Studies</h5>
+                <h5 class="card-title">Postgraduation in Computer Application</h5>
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
                 <div class="card-footer">
@@ -1355,12 +451,12 @@
               </div>
             </div>
 
-            <div class="card upcomingEvents">
+            <div class="card NewTrending">
               <img src="images/list-image.jpg" class="card-img-top" alt="">
               <div class=" card-body">
                 <span class="badge rounded-pill text-bg-danger">Art & Design</span>
 
-                <h5 class="card-title">Business Studies</h5>
+                <h5 class="card-title">Bachelor of Computer Science</h5>
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
                 <div class="card-footer">
@@ -1395,10 +491,10 @@
               </div>
             </div>
 
-            <div class="card cat-3">
+            <div class="card Popularity cat-3 Art_Design">
               <img src="images/list-image.jpg" class="card-img-top" alt="">
               <div class=" card-body">
-                <span class="badge rounded-pill text-bg-primary">Art & Design</span>
+                <span class="badge rounded-pill text-bg-primary">Bachelor of Commerce</span>
 
                 <h5 class="card-title">Business Studies</h5>
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -1428,10 +524,24 @@
     </section>
     <!-- latest Course section finish -->
 
+    <!-- cta section starts -->
+    <div class="ctaSection">
+      <div class="container" >
+        <div class="col-md-10 offset-md-1"  data-aos="fade-up">
+          <h5>with us and you are a student?</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          </p>
+          <p><a href="#" class="ebary-button">Ready to get Started?</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- cta section finish -->
+
     <!-- other categories section starts -->
     <section class="category__area section">
       <div class="container">
-        <div class="row align-items-end">
+        <div class="row align-items-end" data-aos="fade-down">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8">
             <div class="section__title-wrapper mb-45">
               <h2 class="section__title">Explore <br>Our <span class="yellow-bg">Popular <img
@@ -1445,7 +555,7 @@
               </a></div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-left">
           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div class="category__item transition-3 d-flex align-items-center">
               <div class="category__icon mr-30"><svg viewBox="0 0 512 512">
@@ -1462,7 +572,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Data Science</a></h4>
+                <h4 class="category__title"><a href="#">Data Science</a></h4>
                 <p>Data is Everything</p>
               </div>
             </div>
@@ -1483,7 +593,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Business</a></h4>
+                <h4 class="category__title"><a href="#">Business</a></h4>
                 <p>Improve your business</p>
               </div>
             </div>
@@ -1504,7 +614,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Art &amp; Design</a></h4>
+                <h4 class="category__title"><a href="#">Art &amp; Design</a></h4>
                 <p>Fun &amp; Challenging</p>
               </div>
             </div>
@@ -1525,7 +635,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Lifestyle</a></h4>
+                <h4 class="category__title"><a href="#">Lifestyle</a></h4>
                 <p>New Skills, New You</p>
               </div>
             </div>
@@ -1546,7 +656,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Marketing</a></h4>
+                <h4 class="category__title"><a href="#">Marketing</a></h4>
                 <p>Improve your business</p>
               </div>
             </div>
@@ -1564,7 +674,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Finance</a></h4>
+                <h4 class="category__title"><a href="#">Finance</a></h4>
                 <p>Fun &amp; Challenging</p>
               </div>
             </div>
@@ -1588,7 +698,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Health &amp; Fitness</a></h4>
+                <h4 class="category__title"><a href="#">Health &amp; Fitness</a></h4>
                 <p>Invest to Your Body</p>
               </div>
             </div>
@@ -1614,7 +724,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Music</a></h4>
+                <h4 class="category__title"><a href="#">Music</a></h4>
                 <p>Major or Minor</p>
               </div>
             </div>
@@ -1635,7 +745,7 @@
                   </g>
                 </svg></div>
               <div class="category__content">
-                <h4 class="category__title"><a href="/course-details">Academics</a></h4>
+                <h4 class="category__title"><a href="#">Academics</a></h4>
                 <p>High Education Level</p>
               </div>
             </div>
@@ -1651,22 +761,22 @@
         <!-- info four section starts -->
         <div class="four-sections">
           <div class="row">
-            <div class="col-6 col-sm-6 col-md-3 section-content">
+            <div class="col-6 col-sm-6 col-md-3 section-content" data-aos="fade-right" data-aos-duration="1500">
               <span><img src="images/info-icon-1.svg" alt=""></span>
               <h5>280+ </h5>
               <p>COURSES & VIDEOS</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-3 section-content">
+            <div class="col-6 col-sm-6 col-md-3 section-content" data-aos="fade-right" data-aos-duration="1500">
               <span><img src="images/info-icon-2.svg" alt=""></span>
               <h5>536+ </h5>
               <p>EXPERT TEACHERS</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-3 section-content">
+            <div class="col-6 col-sm-6 col-md-3 section-content" data-aos="fade-right" data-aos-duration="1500">
               <span><img src="images/info-icon-3.svg" alt=""></span>
               <h5>200+ </h5>
               <p>TOTAL STUDENTS</p>
             </div>
-            <div class="col-6 col-sm-6 col-md-3 section-content">
+            <div class="col-6 col-sm-6 col-md-3 section-content" data-aos="fade-right" data-aos-duration="1500">
               <span><img src="images/info-icon-4.svg" alt=""></span>
               <h5>280+ </h5>
               <p>CLASSES COMPLETE</p>
@@ -1680,7 +790,7 @@
     <!-- four section finish -->
 
     <!-- advertisement section satrts -->
-    <section class="section text-center">
+    <section class="section text-center d-none">
       <div class="container"><img src="images/advertisement.svg" class="img-fluid" alt="" srcset=""></div>
     </section>
     <!-- advertisement section finsh -->
@@ -1696,7 +806,7 @@
         <div class="events-content">
           <div class="events-shape"><img src="images/events-shape.png" alt=""></div>
           <div class="row">
-            <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <div data-aos="fade-left" data-aos-duration="1000" class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
               <div class="card">
                 <div class="card-body">
                   <div class="row align-items-center">
@@ -1716,7 +826,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <div data-aos="fade-left" data-aos-duration="1300" class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
               <div class="card">
                 <div class="card-body">
                   <div class="row align-items-center">
@@ -1736,7 +846,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <div data-aos="fade-left" data-aos-duration="1600" class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
               <div class="card">
                 <div class="card-body">
                   <div class="row align-items-center">
@@ -1756,7 +866,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <div data-aos="fade-left" data-aos-duration="1900" class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
               <div class="card">
                 <div class="card-body">
                   <div class="row align-items-center">
@@ -1776,7 +886,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <div data-aos="fade-left" data-aos-duration="2200" class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
               <div class="card">
                 <div class="card-body">
                   <div class="row align-items-center">
@@ -1870,8 +980,11 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src='js/jquery.touchSwipe.min.js'></script>
   <script src='js/slick.js'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/common.js"></script>
-
+  <script>
+    AOS.init({ disable: 'mobile' });
+  </script>
 </body>
 
 </html>

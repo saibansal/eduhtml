@@ -92,17 +92,18 @@ jQuery(document).ready(function ($) {
       draggable: false,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 991,
           settings: {
             arrows: true,
             rows: 1,
             settings: "unslick",
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 2,
+            margin: '15px',
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 767,
           settings: {
             arrows: true,
             rows: 1,
@@ -517,6 +518,29 @@ jQuery(document).ready(function ($) {
         if (typeof settings.beforeFilter == 'function') {
           settings.beforeFilter.call(this, category, slider, slides);
         }
+
+        $('.latestCourse .section-heading ul li.nav-item').click(function() {
+          if(!$(this).is('.active')){
+            var category = $(this).data('filter'),
+                slider = $('.latestCourse .card');
+                
+            $(this).addClass('active').siblings().removeClass('active');
+            
+            slider.slick('slickUnfilter'); //reset slider filter
+            if(category != 'Tout'){
+              slider.slick('slickFilter','.'+category);
+            }
+          }       
+        })
+
+
+
+        
+        $('.latestCourse .section-heading ul li.nav-item').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+        })
+
+        
         slider.slick('unslick');
         if (category === 'all') {
           slider.append(newSlides);
@@ -581,4 +605,7 @@ $('.slider-nav').slick({
 
 
 
- 
+// topSearchButton
+$("button.topSearchButton").click(function(){ 
+  $(".searchSection").toggleClass("important");
+});
