@@ -304,9 +304,9 @@ body { counter-reset: section; }
 .latestCourse .tab-content .card .card-footer a.link { font-size: 14px; font-family: "Roboto"; font-weight: bold; }
 .latestCourse .tab-content .card .card-footer a img { display: inline-block; }
 
-.ctaSection { float: left; width: 100%; padding: 9rem 0; justify-content: center; text-align: center; color: #fff; background-image: url(../../images/cta-bg.png); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.ctaSection { float: left; width: 100%; padding: 9rem 0; justify-content: center; text-align: center; color: #fff; background-image: url(../images/cta-bg.png); background-size: cover; background-position: center center; background-repeat: no-repeat; }
 @media only screen and (max-width: 767.98px) { .ctaSection { padding: 4rem 0; } }
-.ctaSection h5 { color: #fff; float: left; width: 100%; background-image: url(../../images/yellow-bg-2.png); background-repeat: no-repeat; background-position: bottom center; font-family: "Roboto"; font-size: 56px; }
+.ctaSection h5 { color: #fff; float: left; width: 100%; background-image: url(../images/yellow-bg-2.png); background-repeat: no-repeat; background-position: bottom center; font-family: "Roboto"; font-size: 56px; }
 @media only screen and (max-width: 767.98px) { .ctaSection h5 { font-size: 23px; } }
 .ctaSection p { color: #fff; font-size: 19px; font-family: "Roboto"; max-width: 795px; margin: auto; margin-bottom: 15px; }
 .ctaSection p .ebary-button { background-color: #1F69A9; }
