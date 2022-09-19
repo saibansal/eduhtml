@@ -15,7 +15,7 @@ a:focus { outline: none; box-shadow: 0 0 0 !important; }
 
 @media only screen and (max-width: 767.98px) { .container { max-width: 94%; } }
 @media only screen and (min-width: 1400px) { .container { max-width: 92%; } }
-@media only screen and (min-width: 1800px) { .container { max-width: 1650px; } }
+@media only screen and (min-width: 1800px) { .container { max-width: 1450px; } }
 
 .ebary-button { color: #fff; border-color: #FFB352; background-color: #FFB352; font-size: 14px; padding: 0 20px; height: 40px; line-height: 40px; border-radius: 0px; position: relative; display: inline-block; text-align: center; white-space: nowrap; letter-spacing: .5px; cursor: pointer; transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
 .ebary-button:before { position: absolute; width: 100%; height: 40px; border: solid 1px #fff; left: 10px; top: 10px; content: ''; z-index: -1; }
